@@ -1,17 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { getDefaultResultOrder } from "dns";
 
 export default component$(() => {
-  return (
-    <>
-      <h1>Hi 👋</h1>
-      <div>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </div>
-    </>
-  );
+  return <>
+    <div class="text-blue-700 md:text-red-700 h-screen">Bonjour je test tailwind</div>
+  </>
 });
 
 export const head: DocumentHead = {
