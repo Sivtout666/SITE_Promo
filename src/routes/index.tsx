@@ -4,7 +4,7 @@ import { getDefaultResultOrder } from "dns";
 
 export default component$(() => {
   return <>
-    <div class="text-blue-700 md:text-red-700 h-screen">Bonjour je test tailwind</div>
+    <div class=" h-screen"></div>
   </>
 });
 
