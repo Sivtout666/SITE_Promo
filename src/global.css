@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-isen-500: #DB0033;
+    --color-isen-900: #9C0024;
+    --color-blisen-500: #0355B4;
+    --color-blisen-900: #003879;
+}

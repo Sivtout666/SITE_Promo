@@ -3,7 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return <>
-    <div class=" h-screen"></div>
+    <div class=" h-screen bg-gray-600"></div>
   </>
 });
 
