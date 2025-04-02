@@ -1,15 +1,19 @@
 import { component$ } from "@builder.io/qwik";
 
-import Carte from "~/components/Carte"
-import Partenaire from "~/components/Carte/partenaire"
+import Presentation from "./Presentation";
+import Experience from "./Experience";
+import Partenaires from "./Partenaires";
 
 export default component$(() => {
-    return <section>
-        <div class="h-52 w-full"/>
-        <div class="w-full h-[60vh] relative">
-            <Carte/>
-            <Partenaire/>
-        </div>
-        <div class="h-52 w-full"/>
+    return <section class="flex flex-col gap-16">
+        <Presentation/>
+        <Partenaires/>
+        <Experience/>
+
+        {/* 
+        - Erasmus
+        - Séjour linguistique
+        - Projet personnels
+        */}
     </section>
 });

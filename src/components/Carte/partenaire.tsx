@@ -25,8 +25,8 @@ export default component$(() => {
         })
     })
 
-    return partenaire.value && <div ref={div} class="z-[500] absolute top-0 right-0 w-auto h-full p-8 
-        bg-white/25 backdrop-blur-sm border-l border-white">
+    return partenaire.value && <div ref={div} class="z-[500] absolute top-0 right-0 w-fit max-w-[50vw] h-full p-8 
+        bg-white/25 backdrop-blur-sm border-l border-white overflow-y-auto">
         <h3 class="text-red-600 text-sm font-semibold my-1">
             {partenaire.value.pays}
         </h3>
@@ -36,7 +36,7 @@ export default component$(() => {
         <div class="flex flex-row gap-2 items-center my-3">
             {
                 partenaire.value.anglais && <div
-                    class="flex flex-row px-3 py-1 gap-2 items-center bg-white/50 w-fit
+                    class="flex flex-row px-3 py-1 gap-2 items-center bg-black/10 w-fit
                         select-none">
                     <LuLanguages/>
                     {
@@ -52,7 +52,6 @@ export default component$(() => {
                     Site internet
                 </a>
             }
-
         </div>
     </div>
 })
