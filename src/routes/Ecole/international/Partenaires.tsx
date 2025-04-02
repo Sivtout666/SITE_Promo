@@ -6,7 +6,7 @@ export default () => <>
         <h2 class="text-4xl font-medium my-4">
             Nos écoles partenaires 🤝
         </h2>
-        <p class="text-xl font-light max-w-1/2">
+        <p class="text-xl font-light lg:max-w-1/2">
             Vous aurez l'opportunité d'étudier dans nos écoles partenaires 
             mais vous pouvez également proposer votre propre projet.
         </p>

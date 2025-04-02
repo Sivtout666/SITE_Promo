@@ -25,8 +25,8 @@ export default component$(() => {
         })
     })
 
-    return partenaire.value && <div ref={div} class="z-[500] absolute top-0 right-0 w-fit max-w-[50vw] h-full p-8 
-        bg-white/25 backdrop-blur-sm border-l border-white overflow-y-auto">
+    return partenaire.value && <div ref={div} class="z-[500] md:absolute top-0 right-0 md:w-fit md:max-w-[50vw] md:h-full p-8 
+        bg-white/25 backdrop-blur-sm border-l border-white overflow-y-auto w-full h-fit">
         <h3 class="text-red-600 text-sm font-semibold my-1">
             {partenaire.value.pays}
         </h3>
