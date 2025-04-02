@@ -2,7 +2,7 @@ import { Icon } from "leaflet";
 
 export const Ecole = new Icon({
     iconUrl: '/img/ecole.png',
-    iconSize: [32, 32]
+    iconSize: [48, 48]
 });
 
 export const Partenaire = new Icon({
