@@ -1,6 +1,6 @@
 import Avion3 from "~/assets/avions/avions3.png?jsx"
 
-export default () => <div class="px-16 py-32 grid grid-cols-5 my-16">
+export default () => <div class="px-16 py-16 md:py-32 grid grid-rows-2 lg:grid-cols-5 my-16">
     <div class="col-span-2 p-8">
         <h2 class="text-4xl font-medium my-4">
             Retours d'expériences
