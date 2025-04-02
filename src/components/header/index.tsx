@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
 
     return <>
-        <div class="h-20 w-screen flex flex-row justify-around items-center bg-transparent fixed text-isen-900 ">
+        <div class="h-20 w-screen flex flex-row justify-around items-center bg-transparent fixed text-isen-900 z-50">
             <div id="logo" class="text-2xl">ISEN Méditerranée</div>
             <div id="jspl'autrecotequoi" class="flex flex-row gap-15">
                 <div class="hover:underline underline-offset-5
