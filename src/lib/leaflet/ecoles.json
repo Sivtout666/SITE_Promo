@@ -1,0 +1,213 @@
+[
+    {
+        "nom": "University of Technology, Sydney",
+        "pays": "Australie",
+        "anglais": "Anglais B2",
+        "lien": "https://www.uts.edu.au",
+        "position": [-33.88363422825243, 151.20058536529544]
+    },
+    {
+        "nom": "Université du Québec à Rimouski",
+        "pays": "Canada",
+        "lien": "https://www.uqar.ca",
+        "position": [48.45246033678038, -68.51222276687623]
+    },
+    {
+        "nom": "Hanyang University",
+        "pays": "Corée du Sud",
+        "anglais": "Anglais B2",
+        "position": [37.55737026044851, 127.04564094543458]
+    },
+    {
+        "nom": "Napier University",
+        "pays": "Ecosse",
+        "lien": "https://www.napier.ac.uk",
+        "anglais": "Anglais B2",
+        "position": [55.92480220710501, -3.288592100143433]
+    },
+    {
+        "nom": "Florida International U. Miami - USA",
+        "pays": "Etats Unis",
+        "lien": "https://www.fiu.edu",
+        "anglais": "TOEFL 65",
+        "position": [25.756251728717274, -80.37544012069704]
+    },
+    {
+        "nom": "Tennessee Tech – Cockville",
+        "pays": "Etats Unis",
+        "lien": "https://www.tntech.edu",
+        "anglais": "TOEFL 57, TOEIC, Cambridge, Duolingo",
+        "position": [36.176266873195345, -85.50910234451294]
+    },
+    {
+        "nom": "California State University - Northridge",
+        "pays": "Etats Unis",
+        "lien": "https://w2.csun.edu",
+        "anglais": "TOEFL Ibt 61 – IELT 6.0 – Duolingo 95 – itep 3,8",
+        "position": [34.24073442186425, -118.52997601032259]
+    },
+    {
+        "nom": "BISP- University of California Berkeley",
+        "pays": "Etats Unis",
+        "lien": "https://www.berkeley.edu",
+        "position": [37.87150388898638, -122.25452363491058]
+    },
+    {
+        "nom": "UCLA Extension",
+        "pays": "Etats Unis",
+        "lien": "https://www.ucla.edu",
+        "anglais": "TOEFL Ibt 61 – IELT 6.0 – Duolingo 95",
+        "position": [34.05964151436065, -118.44635009765626]
+    },
+    {
+        "nom": "Griffith College",
+        "pays": "Irlande",
+        "lien": "https://www.griffith.ie",
+        "anglais": "Anglais B2",
+        "position": [53.33099792296444, -6.2779247760772705]
+    },
+    {
+        "nom": "Universiti Putra Malaysia",
+        "pays": "Malaisie",
+        "anglais": "Anglais B1/B2",
+        "position": [2.9997630021620987, 101.70567512512208]
+    },
+    {
+        "nom": "Universiti of Kuala Lumpur",
+        "pays": "Malaisie",
+        "anglais": "Anglais B1/B2",
+        "position": [3.1592524885648277, 101.70139431953432]
+    },
+    {
+        "nom": "London Metropolitan University",
+        "pays": "Royaume Unis",
+        "anglais": "6 à l’IELTS",
+        "lien": "https://www.londonmet.ac.uk",
+        "position": [51.55265972599049, -0.11104345321655275]
+    },
+    {
+        "nom": "Kasetsart University",
+        "pays": "Thaïlande",
+        "anglais": "Anglais B2",
+        "position": [13.847986708259915, 100.5721950531006]
+    },
+    {
+        "nom": "FAU",
+        "pays": "Allemagne",
+        "anglais": "Allemand B2",
+        "lien": "https://www.fau.eu",
+        "position": [49.59781218900046, 11.00406289100647]
+    },
+    {
+        "nom": "JKU",
+        "pays": "Autriche",
+        "anglais": "Anglais B2",
+        "lien": "https://www.jku.au",
+        "position": [48.33734580324909, 14.3159955739975]
+    },
+    {
+        "nom": "Vives",
+        "pays": "Belgique",
+        "anglais": "Anglais B1",
+        "lien": "https://www.vives.be",
+        "position": [50.80585336576774, 3.284134268760681]
+    },
+    {
+        "nom": "University of Southern Denmark",
+        "pays": "Danemark",
+        "anglais": "Anglais B2",
+        "lien": "https://www.sdu.dk",
+        "position": [55.36930763445595, 10.42829990386963]
+    },
+    {
+        "nom": "Universidad de Granada",
+        "pays": "Espagne",
+        "anglais": "Espagnol B2",
+        "lien": "https://www.ugr.es",
+        "position": [37.184039987211776, -3.600602746009827]
+    },
+    {
+        "nom": "Universidad de Almeria",
+        "pays": "Espagne",
+        "anglais": "Anglais B2",
+        "lien": "https://www.ual.es",
+        "position": [36.83388214847486, -2.39501953125]
+    },
+    {
+        "nom": "Universidad Europea Del Atlantico",
+        "pays": "Espagne",
+        "anglais": "Espagnol B2",
+        "lien": "https://www.uneatlantico.es",
+        "position": [43.451559787007724, -3.875792026519776]
+    },
+    {
+        "nom": "UNIMORE",
+        "pays": "Italie",
+        "anglais": "Italien B1 & Anglais B2",
+        "lien": "https://www.unimore.it",
+        "position": [44.64519295721337, 10.928134918212892]
+    },
+    {
+        "nom": "UNICA Cagliari",
+        "pays": "Italie",
+        "anglais": "Italien A2 & Anglais B1",
+        "lien": "https://www.unica.it",
+        "position": [39.21770421926961, 9.114897251129152]
+    },
+    {
+        "nom": "Universita Politecnica Delle Marche",
+        "pays": "Italie",
+        "anglais": "Italien B1 & Anglais B2",
+        "lien": "https://www.univpm.it",
+        "position": [43.619929841312015, 13.517282009124758]
+    },
+    {
+        "nom": "Windesheim University of Applied Sciences",
+        "pays": "Pays-bas",
+        "anglais": "Anglais B2",
+        "lien": "https://www.windesheim.com",
+        "position": [52.49955923908242, 6.080026030540467]
+    },
+    {
+        "nom": "Polytechnika Gdansk",
+        "pays": "Pologne",
+        "anglais": "Anglais B2",
+        "lien": "https://www.pg.edu.pl",
+        "position": [54.371502348930115, 18.619117140769962]
+    },
+    {
+        "nom": "Polytechnika Warszawska",
+        "pays": "Pologne",
+        "anglais": "Anglais B1",
+        "lien": "https://www.pw.edu.pl",
+        "position": [52.220326806621514, 21.011116504669193]
+    },
+    {
+        "nom": "Technical University of Cluj-Napoca",
+        "pays": "Roumanie",
+        "anglais": "Anglais B2",
+        "lien": "https://www.utcluj.ro",
+        "position": [46.7692471331262, 23.585617993861987]
+    },
+    {
+        "nom": "Romanian-American University",
+        "pays": "Roumanie",
+        "anglais": "Anglais B2",
+        "lien": "https://www.rau.ro",
+        "position": [44.473355003068384, 26.065512803298045]
+    },
+    {
+        "nom": "BRNO University of Technology",
+        "pays": "République tchèque",
+        "anglais": "Anglais B2",
+        "lien": "https://www.vut.cz",
+        "position": [49.20177201501795, 16.603376756013414]
+    },
+    {
+        "nom": "University of Maribor",
+        "pays": "Solvenie",
+        "anglais": "Anglais B1",
+        "lien": "https://www.um.si",
+        "position": [46.559177141367904, 15.643263886698335]
+    }
+]
