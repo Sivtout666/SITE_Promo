@@ -2,7 +2,9 @@ import { component$ } from "@builder.io/qwik";
 
 
 export default component$(() => {
-    return <>
-        <div class="h-screen bg-amber-700"></div>
-    </>
+    return <section class="flex flex-col gap-16">
+        <Presentation/>
+        <Formations/>
+        <Chiffres/>
+    </section>
 });
