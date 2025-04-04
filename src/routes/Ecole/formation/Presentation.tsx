@@ -1,5 +1,6 @@
 
-export default () => <div class="px-8 md:px-16 py-32 md:py-64 relative">
+export default () => <>
+    <div class="px-8 md:px-16 py-32 md:py-64 relative">
     <h1 class="text-5xl font-semibold my-8">
         Nos <span class="text-isen-500 font-bold">Formations</span>!
     </h1>
@@ -8,3 +9,5 @@ export default () => <div class="px-8 md:px-16 py-32 md:py-64 relative">
     </p>
 
 </div>
+
+</>
