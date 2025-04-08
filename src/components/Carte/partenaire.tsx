@@ -18,8 +18,6 @@ export default component$(() => {
             if(!div.value) return
 
             if(document.contains(div.value) && !div.value.contains(target)) {
-                console.log(div.value)
-                console.log('close')
                 partenaire.value = undefined
             }
         })

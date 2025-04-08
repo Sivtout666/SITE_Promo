@@ -8,6 +8,7 @@ export default (element: HTMLElement): Map => {
     const carte = map(element, {
         renderer: new Canvas(),
         preferCanvas: true,
+        scrollWheelZoom: false,
         minZoom: 2,
     }).setView([43.1205, 5.9388], 3);
 
