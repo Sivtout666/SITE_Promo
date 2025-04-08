@@ -30,6 +30,12 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body lang="en">
+        <div class="bg-orange-600 w-screen p-4 relative z-[100000] text-white font-medium">
+            🚧 Ce site est en construction, <span 
+                class="font-light">
+                    ne partagez pas cette version.
+            </span>
+        </div>
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>
