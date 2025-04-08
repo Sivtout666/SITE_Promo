@@ -1,7 +1,8 @@
-import Avion3 from "~/assets/avions/avions3.png?jsx"
+import Globe from "~/assets/globe.png?jsx"
 
-export default () => <div class="px-16 py-16 md:py-32 grid grid-rows-2 lg:grid-cols-5 my-16">
-    <div class="col-span-2 p-8">
+export default () => <div class="p-8 sm:p-16 md:py-32 my-8 sm:my-16
+    grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-5">
+    <div class="col-span-2 py-4 sm:p-8">
         <h2 class="text-4xl font-medium my-4">
             Retours d'expériences
         </h2>
@@ -9,7 +10,7 @@ export default () => <div class="px-16 py-16 md:py-32 grid grid-rows-2 lg:grid-c
             Nos étudiants répondent aux questions qu’on peut se 
             poser avant de partir étudier à l'étranger 🌏
         </p>
-        <Avion3 class="py-8 max-h-72 object-contain float-right w-auto"/>
+        <Globe class="p-8 max-h-72 object-contain float-right w-auto rotate-12"/>
     </div>
     <iframe
         class="w-full h-full min-h-96 rounded-lg col-span-3"
