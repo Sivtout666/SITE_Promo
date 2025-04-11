@@ -6,11 +6,11 @@ import Batiment from "~/assets/batiment.png?jsx"
 // https://qwik.dev/docs/advanced/dollar/
 
 export default ({ children }: { children: JSXOutput }) => <section id="landing"
-    class="w-screen h-auto md:h-screen relative
+    class="w-screen h-auto md:h-screen relative overflow-hidden
     from-blisen-500 to-blisen-900 bg-gradient-to-b">
     <div id="soleil" class="w-96 h-96 absolute
         -top-80 left-16 bg-white blur-3xl"/>
-    <div class="flex flex-col justify-center 
+    <div class="flex flex-col justify-center
         w-full h-auto md:w-1/2 md:h-screen text-white
         px-8 py-32 md:p-8">
         <h1 class="text-5xl font-black my-4">
