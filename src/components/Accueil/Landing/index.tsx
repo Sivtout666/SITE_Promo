@@ -7,7 +7,7 @@ import Batiment from "~/assets/batiment.png?jsx"
 import Clouds from "./clouds"
 import Logo from "~/assets/isen/logo-blanc.png?jsx"
 export default () => <section id="landing"
-    class="w-screen h-auto md:h-screen relative overflow-hidden
+-    class="w-screen h-auto md:h-screen relative overflow-hidden
     from-blisen-500 to-blisen-900 bg-gradient-to-b">
     <div id="soleil" class="w-96 h-96 absolute
         -top-80 left-16 bg-white blur-3xl"/>
