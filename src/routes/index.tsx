@@ -5,6 +5,7 @@ import Landing from "~/components/Accueil/landing";
 import Clouds from "~/components/Accueil/clouds";
 
 export default component$(() => {
+    // eslint-disable-next-line qwik/no-use-visible-task
     useVisibleTask$(() => {
         scroll(
             animate('#batiment', {
