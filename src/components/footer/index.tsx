@@ -7,7 +7,7 @@ import { LienFondu } from "./lien";
 const categories = [
     {
         nom: "Accueil",
-        lien: "",
+        lien: "/",
         liens: {
             'Partie 1': '#1',
             'Partie 2': '#2',
@@ -16,23 +16,23 @@ const categories = [
     },
     {
         nom: "L'école",
-        lien: "",
+        lien: "/ecole",
         liens: {
-            "Formations": '',
-            "Matières": '',
-            "Partenaires": '',
-            "International": '',
-            "Master spécialisé": ''
+            "Formations": '/ecole/formation',
+            "International": '/ecole/international',
+            "Matières": '/ecole/matieres',
+            "Partenaires": '/ecole/partenaires',
+            "Master spécialisé": '/ecole/recherches',
         }
     },
     {
         nom: "Vie étudiante",
-        lien: "",
+        lien: "/vie_etudiante",
         liens: {
-            "Evenements": '',
-            "Associations": '',
-            "Projets": '',
-            "Ville/ Logements": ''
+            "Evenements": '/vie_etudiante/Evenements',
+            "Associations": '/vie_etudiante/Associations',
+            "Projets": '/vie_etudiante/Projets',
+            "Ville/ Logements": '/vie_etudiante/Ville'
         }
     }
 ]
@@ -40,21 +40,24 @@ const categories = [
 export default component$(() => {
     return <footer class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
         <div class="bg-gradient-to-br from-isen-500 to-isen-900 text-white 
-            relative p-6 md:p-12 w-full overflow-hidden flex flex-col gap-4 content-between">
+            relative p-6 md:p-12 w-full overflow-hidden flex flex-col gap-4 justify-between">
             <div class="absolute md:block bg-white -rotate-12 -top-16 -right-16 w-40 h-96 hidden"/>
             <Logo class="md:max-w-3/4 max-w-full"/>
             <div class="flex flex-row gap-4">
-                <Link target="_blank" 
+                <p class="font-medium">
+                    Suivez-nous
+                </p>
+                <Link target="_blank" class="group"
                     href="https://www.instagram.com/isenmediterranee/">
-                    <LuInstagram class="w-6 h-6"/>
+                    <LuInstagram class="w-6 h-6 group-hover:stroke-white/75 transition-colors"/>
                 </Link>
-                <Link target="_blank" 
+                <Link target="_blank" class="group"
                     href="https://www.linkedin.com/company/isen-mediterranee/">
-                    <LuLinkedin class="w-6 h-6"/>
+                    <LuLinkedin class="w-6 h-6 group-hover:stroke-white/75 transition-colors"/>
                 </Link>
-                <Link target="_blank" 
+                <Link target="_blank" class="group"
                     href="https://www.youtube.com/channel/UCpVrAR52BwO_utn1PGdxhDg">
-                    <LuYoutube class="w-6 h-6"/>
+                    <LuYoutube class="w-6 h-6 group-hover:stroke-white/75 transition-colors"/>
                 </Link>
             </div>
         </div>
@@ -77,17 +80,17 @@ export default component$(() => {
                 </div>)
             }
             <div class="flex flex-col gap-1">
-                <Link href="" class="text-lg font-medium">
+                <Link href="/blog" class="text-lg font-medium">
                     Blog
                 </Link>
-                <Link href="" class="text-lg font-medium">
-                    Blabla 1
+                <Link href="#not-yet" class="text-lg font-medium">
+                    Politique de confidentialité
                 </Link>
-                <Link href="" class="text-lg font-medium">
-                    Blabla 2
+                <Link target="_blank" href="https://isen-mediterranee.fr" class="text-lg font-medium">
+                    Site officiel
                 </Link>
-                <Link href="" class="text-lg font-medium">
-                    Blabla 3
+                <Link href="#not-yet" class="text-lg font-medium">
+                    Mentions légales
                 </Link>
             </div>
         </div>
