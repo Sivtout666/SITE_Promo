@@ -43,6 +43,10 @@ export default component$(() => {
             relative p-6 md:p-12 w-full overflow-hidden flex flex-col gap-4 justify-between">
             <div class="absolute md:block bg-white -rotate-12 -top-16 -right-16 w-40 h-96 hidden"/>
             <Logo class="md:max-w-3/4 max-w-full"/>
+            <p class="text-xs max-w-4/5 text-white/50">
+                Ce site est un projet étudiant, il n'est pas officiel.<br/>
+                Projet d'SHES CIN1 groupe A (LTMEECC)
+            </p>
             <div class="flex flex-row gap-4">
                 <p class="font-medium">
                     Suivez-nous
