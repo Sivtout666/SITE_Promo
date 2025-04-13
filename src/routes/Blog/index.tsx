@@ -5,7 +5,7 @@ import Entete from "./Entete";
 export default component$(() => {
     return <section class="p-4">
         <Entete/>
-        <div class="grid grid-cols-3 px-8 py-16 gap-8 *:min-h-64">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 px-8 py-16 gap-8 *:min-h-64">
             <Article
                 titre="Des campus entre mer et technologies"
                 description="Située à Toulon et Marseille, l’ISEN Méditerranée offre un cadre d’études unique, au cœur de la tech et du soleil."
