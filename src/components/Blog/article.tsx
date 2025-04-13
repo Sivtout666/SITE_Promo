@@ -1,4 +1,4 @@
-import { component$, PropsOf } from "@builder.io/qwik";
+import { component$, type PropsOf } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import Amphi from "~/assets/isen/amphi.jpg?jsx"
 import Gala from "~/assets/isen/gala.jpg?jsx"
