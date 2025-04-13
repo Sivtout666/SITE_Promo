@@ -17,16 +17,16 @@ export default component$(() => {
                     <div class="p-3 absolute top-10 hidden right-0 group-hover:block border-1 bg-white">
                         <div class="flex flex-row w-xl gap-10 p-3 pl-2">  {/* Dropdown*/}
                             <div class="flex flex-col gap-2"> {/* Partie gauche du dropdown*/}
-                                <Link href="/Ecole/formation" class="hover:underline">Formation</Link>
-                                <Link href="/Ecole/matieres" class="hover:underline">Matières / Emploi du temps</Link>
-                                <Link href="/Ecole/partenaires" class="hover:underline">Partenaires / Entreprises</Link>
+                                <Link href="/ecole/formation" class="hover:underline">Formation</Link>
+                                <Link href="/ecole/matieres" class="hover:underline">Matières / Emploi du temps</Link>
+                                <Link href="/ecole/partenaires" class="hover:underline">Partenaires / Entreprises</Link>
                             </div>
                             <div class="flex flex-col gap-2">{/* Partie droite du dropdown*/}
-                                <Link href="/Ecole/international" class="hover:underline">International</Link>
+                                <Link href="/ecole/international" class="hover:underline">International</Link>
                                 <div class="flex flex-col pl-6 text-sm">
                                     <Link>- Destinations</Link>
                                 </div>
-                                <Link href="/Ecole/recherches" class="hover:underline">Recherches / Master spécialisé</Link>
+                                <Link href="/ecole/recherches" class="hover:underline">Recherches / Master spécialisé</Link>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default component$(() => {
 
                 <div class="hover:underline underline-offset-5
                 text-xl">
-                    <Link href="/Blog">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                 </div>  
             </div>
         </div>
