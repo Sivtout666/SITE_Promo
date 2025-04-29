@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import Presentation from "./Presentation";
-import Formations from "./Formations";
+import { Formations} from "./Formations";
 import Chiffres from "./Chiffres";
 
 export default component$(() => {
