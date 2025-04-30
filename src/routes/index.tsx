@@ -27,6 +27,9 @@ export default component$(() => {
         <Contenu/>
         <Qui/>
         <Ou/>
+        <dialog class="backdrop-blur-sm">
+
+        </dialog>
     </>
 });
 export const head: DocumentHead = {
