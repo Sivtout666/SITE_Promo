@@ -36,7 +36,9 @@ export default component$(() => {
                     ne partagez pas cette version.
             </span>
         </div>
-        <RouterOutlet />
+        <div class="relative">
+            <RouterOutlet />
+        </div>
         {!isDev && <ServiceWorkerRegister />}
       </body>
     </QwikCityProvider>
