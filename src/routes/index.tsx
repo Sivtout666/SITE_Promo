@@ -1,8 +1,11 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { animate, scroll } from "motion"
-import Landing from "~/components/Accueil/landing";
-import Clouds from "~/components/Accueil/clouds";
+import Landing from "~/components/Accueil/Landing";
+import Quoi from "~/components/Accueil/Quoi";
+import Qui from "~/components/Accueil/Qui";
+import Ou from "~/components/Accueil/Ou";
+import Contenu from "~/components/Accueil/Contenu";
 
 export default component$(() => {
     // eslint-disable-next-line qwik/no-use-visible-task
@@ -19,14 +22,13 @@ export default component$(() => {
     })
 
     return <>
-        <Landing>
-            <Clouds/>
-        </Landing>
-        <section class="h-screen bg-fuchsia-800"/>
-        <section class="h-screen bg-lime-400"/>
+        <Landing/>
+        <Quoi/>
+        <Contenu/>
+        <Qui/>
+        <Ou/>
     </>
 });
-
 export const head: DocumentHead = {
     title: "Welcome to Qwik",
     meta: [
