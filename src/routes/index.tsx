@@ -22,11 +22,55 @@ export default component$(() => {
         <Landing>
             <Clouds/>
         </Landing>
-        <section class="h-screen bg-fuchsia-800"/>
-        <section class="h-screen bg-lime-400"/>
+
+        <section class="h-1/2 bg-lime-600 text-white">
+            <p class="p-8">
+                Qui nous sommes
+            </p>
+
+            {/* 
+                Les ingénieurs formés à l’ISEN disposent d’une solide formation scientifique 
+                et de la maîtrise du numérique.
+            
+                grande école, à but non lucratif et labellisée EESPIG.
+
+                 accompagné tout au long de son parcours de formation, un parcours qui correspond 
+                 autant à ses envies qu’aux besoins des entreprises et de la société.
+            */}
+        </section>
+        <section class="h-1/2 bg-blue-600 text-white">
+            <p class="p-8">
+                Qu'est-ce qu'on y fait
+            </p>
+
+            {/* 
+                Formation BAC+5 Ingénieur 
+                options ...
+
+                Bachelor Cybersécurité
+                Bachelor truc..
+            */}
+        </section>
+        <section class="h-1/2 bg-emerald-600 text-white">
+            <p class="p-8">
+                Pour qui
+            </p>
+
+            {/* 
+                Entrées BAC+2 et Postbac via parcoursup
+            */}
+        </section>
+        <section class="h-1/2 bg-indigo-800 text-white">
+            <p class="p-8">
+                Où
+            </p>
+
+            {/* 
+                Campus de Toulon et Marseille
+            */}
+        </section>
     </>
 });
-
 export const head: DocumentHead = {
     title: "Welcome to Qwik",
     meta: [

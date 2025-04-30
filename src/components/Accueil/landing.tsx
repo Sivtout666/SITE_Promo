@@ -5,6 +5,7 @@ import Batiment from "~/assets/batiment.png?jsx"
 // je veux que la page ne soit pas fragmenté en plusieurs parties.
 // https://qwik.dev/docs/advanced/dollar/
 
+import Logo from "~/assets/isen/logo-blanc.png?jsx"
 export default ({ children }: { children: JSXOutput }) => <section id="landing"
     class="w-screen h-auto md:h-screen relative overflow-hidden
     from-blisen-500 to-blisen-900 bg-gradient-to-b">
@@ -13,6 +14,7 @@ export default ({ children }: { children: JSXOutput }) => <section id="landing"
     <div class="flex flex-col justify-center
         w-full h-auto md:w-1/2 md:h-screen text-white
         px-8 py-32 md:p-8">
+        <Logo class="max-w-1/2"/>
         <h1 class="text-5xl font-black my-4">
             Rejoignez la génération qui transforme le monde
         </h1>
