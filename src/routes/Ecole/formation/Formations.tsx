@@ -6,7 +6,7 @@ import Cyber from "~/assets/formation/cyber.png";
 import Gaming from "~/assets/formation/gaming.jpg";
 import { slideIn, slideOut } from "./animations";
 
-// Définir un type pour les formations
+
 interface Formation {
   img: string;
   title: string;
@@ -22,14 +22,14 @@ export const Formations = component$(() => {
   });
 
   const handleCardClick = $((formation: Formation) => {
-    console.log("Card clicked:", formation); // Log pour vérifier si la fonction est appelée
+    console.log("Card clicked:", formation); 
     const infoPage = document.getElementById("info-page");
     if (infoPage) {
       slideIn(infoPage);
       state.selectedFormation = formation;
       state.infoPageVisible = true;
     } else {
-      console.error("info-page element not found"); // Log si l'élément n'est pas trouvé
+      console.error("info-page element not found"); 
     }
   });
 
@@ -40,7 +40,7 @@ export const Formations = component$(() => {
       setTimeout(() => {
         state.infoPageVisible = false;
         state.selectedFormation = null;
-      }, 1000); // Attendre la fin de l'animation avant de réinitialiser l'état
+      }, 1000);
     }
   });
 
