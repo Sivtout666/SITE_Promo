@@ -6,3 +6,7 @@
     --color-blisen-500: #0355B4;
     --color-blisen-900: #003879;
 }
+
+#associations-slider::-webkit-scrollbar {
+    scrollbar-width: none;
+}
