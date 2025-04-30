@@ -1,12 +1,12 @@
-import type { JSXOutput } from "@builder.io/qwik"
 import Batiment from "~/assets/batiment.png?jsx"
 
 // J'utilise seulement du jsx (pas de component$) parce qu'ici
 // je veux que la page ne soit pas fragmenté en plusieurs parties.
 // https://qwik.dev/docs/advanced/dollar/
 
+import Clouds from "./clouds"
 import Logo from "~/assets/isen/logo-blanc.png?jsx"
-export default ({ children }: { children: JSXOutput }) => <section id="landing"
+export default () => <section id="landing"
     class="w-screen h-auto md:h-screen relative overflow-hidden
     from-blisen-500 to-blisen-900 bg-gradient-to-b">
     <div id="soleil" class="w-96 h-96 absolute
@@ -26,6 +26,6 @@ export default ({ children }: { children: JSXOutput }) => <section id="landing"
             class="bottom-0 right-0 w-auto md:absolute
                 ml-auto mt-32 -mx-8 -my-32 md:m-0 
                 h-[60vw] md:h-[55vh] lg:h-[80vh]"/>
-        { children }
+        <Clouds/>
     </div>
 </section>
