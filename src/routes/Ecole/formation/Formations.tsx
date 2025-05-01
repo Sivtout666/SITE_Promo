@@ -51,7 +51,7 @@ export const Formations = component$(() => {
       description:
         "Formation préparatoire offrant une solide base scientifique et en informatique pour poursuivre des études d'ingénieur.",
       details:
-      "La prépa ingénieur informatique et numérique propose une formation polyvalente pour les élèves scientifiques ou économiques, avec un programme en maths, informatique, physique et électronique, et deux options : Développement (technologies et logiciels) ou Économie (analyse de données et dynamiques de marché) ; après deux ans, les étudiants accèdent au cycle ingénieur ; la formation inclut un encadrement individualisé, un contrôle régulier des connaissances, la valorisation du savoir-être via des activités extra-académiques, une organisation en semestres de 30 ECTS selon le système LMD, et des cours de soutien à la demande.",
+        "La prépa ingénieur informatique et numérique est une formation pluridisciplinaire destinée aux élèves issus de filières scientifiques ou économiques. Elle propose un enseignement approfondi en mathématiques, physique, informatique et électronique. Deux parcours sont proposés : • Développement (focalisé sur les nouvelles technologies, la programmation et les systèmes logiciels) ; • Économie (axé sur l’analyse de données, l'économie numérique et les dynamiques de marché). La formation est structurée en semestres de 30 ECTS selon le modèle LMD, avec un suivi pédagogique renforcé, des contrôles réguliers, des activités extra-académiques valorisant le savoir-être, et des cours de soutien accessibles à tous. Elle permet une poursuite directe vers le cycle ingénieur.",
       location: "Toulon",
       tag: "CIN",
     },
@@ -60,16 +60,18 @@ export const Formations = component$(() => {
       title: "Prépa ingénieur biologie, sciences et technologies",
       description:
         "Formation pluridisciplinaire à l’interface du vivant, des sciences et des technologies, préparant aux enjeux de la santé, de la biotechnologie et de l’innovation numérique.",
-      details: "hhhh",
+      details:
+        "La prépa ingénieur biologie, sciences et technologies prépare les étudiants à aborder les défis actuels de la santé, de la bio-informatique, des biotechnologies et de l’innovation numérique. Elle combine enseignements en biologie, chimie, mathématiques, physique et informatique, en intégrant des problématiques liées au vivant et aux technologies émergentes. Cette formation favorise l’analyse critique, la rigueur scientifique, la conduite de projets pluridisciplinaires, et permet une orientation vers des cycles ingénieur spécialisés dans les domaines de la santé et des technologies du vivant.",
       location: "Toulon",
       tag: "BIOST",
     },
     {
       img: Inge,
-      title: "Cycle ingénieur Bac+5",
+      title: "Cycle ingénieur Bac+3 à Bac+5",
       description:
         "Formation d'ingénieurs experts et polyvalents, prêts à relever les défis technologiques actuels et futurs grâce à un large choix de spécialisations.",
-      details: "hhhh",
+      details:
+        "Le cycle ingénieur permet aux étudiants de devenir des ingénieurs compétents, polyvalents et tournés vers l'innovation. Il s'appuie sur une pédagogie par projet, une forte interaction avec les entreprises, et un accompagnement individualisé. Les spécialisations proposées couvrent des domaines variés comme l’intelligence artificielle, la cybersécurité, les systèmes embarqués, la robotique, les data sciences, ou encore l’ingénierie logicielle. Cette formation développe les compétences scientifiques, techniques, managériales et humaines nécessaires pour intégrer un monde professionnel en constante mutation.",
       location: "Toulon",
       tag: "Cycle ingé",
     },
@@ -77,8 +79,9 @@ export const Formations = component$(() => {
       img: Gaming,
       title: "Bachelor Développement de Systèmes Numériques Immersifs",
       description:
-        "Formation axée sur la création de systèmes interactifs et immersifs, mêlant développement logiciel, technologies XR et innovation numérique pour répondre aux nouveaux usages du virtuel.                                                             ",
-      details: "hhhh",
+        "Formation axée sur la création de systèmes interactifs et immersifs, mêlant développement logiciel, technologies XR et innovation numérique pour répondre aux nouveaux usages du virtuel.",
+      details:
+        "Ce bachelor forme des spécialistes de la conception de systèmes interactifs et immersifs : réalité virtuelle (VR), réalité augmentée (AR), jeux vidéo, simulateurs. Le cursus met l’accent sur le développement logiciel, l’interaction homme-machine, le design UX/UI, les moteurs de rendu 3D (Unity, Unreal), ainsi que les méthodologies agiles. Il prépare à des métiers dans le divertissement numérique, l’industrie, la santé ou la formation professionnelle, avec une forte composante d’innovation.",
       location: "Marseille",
       tag: "Bach DSNI",
     },
@@ -87,11 +90,13 @@ export const Formations = component$(() => {
       title: "Bachelor Cybersécurité",
       description:
         "Formation spécialisée en cybersécurité offrant une expertise solide en protection des systèmes informatiques, analyse de vulnérabilités et gestion des risques numériques.",
-      details: "hhhh",
+      details:
+        "Le bachelor Cybersécurité forme des experts capables d’identifier, analyser et contrer les menaces informatiques. Il aborde les fondamentaux des réseaux, systèmes et protocoles, les techniques d’audit, de pentest, de cryptographie, ainsi que la gestion des risques et la conformité réglementaire (RGPD, ISO 27001). Grâce à des projets pratiques et des mises en situation, les étudiants acquièrent les compétences nécessaires pour intégrer des équipes de sécurité informatique dans tous les secteurs d'activité.",
       location: "Toulon",
       tag: "Bach Cyber",
     },
   ];
+  
 
   return (
     <>
@@ -129,26 +134,46 @@ export const Formations = component$(() => {
       </div>
 
       <div
-        id="info-page"
-        class={`fixed top-0 right-0 h-full w-[36rem] transform bg-white shadow-lg transition-transform duration-700 ease-in-out ${state.infoPageVisible ? "translate-x-0" : "pointer-events-none translate-x-full"}`}
-      >
-        {state.selectedFormation && (
-          <div class="p-6">
-            
-            <h2 class="mb-4 text-2xl font-bold">
-              {state.selectedFormation.title}
-            </h2>
-            <p class="text-gray-700">{state.selectedFormation.details}</p>
-            <button
-              id="close-btn"
-              class="mt-4 rounded bg-blue-500 px-4 py-2 text-white"
-              onClick$={handleCloseClick}
-            >
-              Fermer
-            </button>
-          </div>
-        )}
+  id="info-page"
+  class={`fixed top-0 right-0 h-full w-[36rem] transform bg-white shadow-lg transition-transform duration-700 ease-in-out ${
+    state.infoPageVisible
+      ? 'translate-x-0'
+      : 'pointer-events-none translate-x-full'
+  }`}
+>
+  {state.selectedFormation && (
+    <div class="p-6 font-sans text-[#001a57] overflow-y-auto h-full">
+      {/* Titre */}
+      <div class="bg-gradient-to-r from-red-700 to-red-500 text-white px-6 py-3 rounded-full text-center mb-6 shadow-md">
+        <h1 class="text-xl font-bold">
+          {state.selectedFormation.title}
+        </h1>
       </div>
+      {state.selectedFormation.img && (
+        <img
+          src={state.selectedFormation.img}
+          alt="Illustration"
+          class="rounded-xl w-md mb-4 shadow-lg"
+        />
+      )}
+
+      <div class="text-sm space-y-4">
+        <p>{state.selectedFormation.details}</p>
+
+      </div>
+
+      {/* Bouton Fermer */}
+      <button
+        id="close-btn"
+        class="mt-6 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+        onClick$={handleCloseClick}
+      >
+        Fermer
+      </button>
+    </div>
+  )}
+</div>
+
     </>
   );
 });

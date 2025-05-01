@@ -1,6 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
+
+
+
   const tableau1 = [
     { nom: "Mécanique", annee1: 5, annee2: "" },
     { nom: "Physique", annee1: 5, annee2: "" },
@@ -18,10 +21,11 @@ export default component$(() => {
     { nom: "Mathématiques", annee1: 5, annee2: 5 },
     { nom: "Informatique", annee1: 5, annee2: 5 },
     { nom: "Sciences Humaines", annee1: 3, annee2: 3 },
-    { nom: "Anglais ", annee1: 2, annee2: 2 },
+    { nom: "Anglais", annee1: 2, annee2: 2 },
     { nom: "Biologie", annee1: 5, annee2: 5 },
     { nom: "Électronique Numérique", annee1: "", annee2: 5 },
   ];
+
   const tableau3 = [
     { nom: "Mathématiques", annee1: 5, annee2: 5 },
     { nom: "Physique", annee1: 5, annee2: 5 },
@@ -32,6 +36,7 @@ export default component$(() => {
     { nom: "EPS", annee1: 2, annee2: 2 },
     { nom: "LV2 (facultatif)", annee1: 1, annee2: 1 },
   ];
+
   const tableau4 = [
     { nom: "Électronique Analogique", annee1: 6, annee2: 5 },
     { nom: "Systèmes élémentaires", annee1: 3, annee2: "" },
@@ -45,39 +50,39 @@ export default component$(() => {
     { nom: "Intelligence artificielle", annee1: "", annee2: 3 },
     { nom: "Développement", annee1: "", annee2: 5 },
   ];
-  
+
   const tableau5 = [
-        { nom: "Intelligence Artificielle", annee1: 5, annee2: 5 },
-        { nom: "Développement Système", annee1: 5, annee2: "" },
-        { nom: "Déploiement Cloud", annee1: 5, annee2: "" },
-        { nom: "Projet Technique", annee1: 10, annee2: "" },
-        { nom: "SHES", annee1: 6, annee2: 3 },
-        { nom: "Anglais", annee1: 4, annee2: 2 },
-        { nom: "Sécurité", annee1: 5, annee2: 5 },
-        { nom: "Bureau d'Études", annee1: "", annee2: 10 },
-        { nom: "Stage d'Application Ingénieur", annee1: 5, annee2: "" },
-        { nom: "Projet de fin d'études / Contrat Pro", annee1: "", annee2: 30 },
+    { nom: "Intelligence Artificielle", annee1: 5, annee2: 5 },
+    { nom: "Développement Système", annee1: 5, annee2: "" },
+    { nom: "Déploiement Cloud", annee1: 5, annee2: "" },
+    { nom: "Projet Technique", annee1: 10, annee2: "" },
+    { nom: "SHES", annee1: 6, annee2: 3 },
+    { nom: "Anglais", annee1: 4, annee2: 2 },
+    { nom: "Sécurité", annee1: 5, annee2: 5 },
+    { nom: "Bureau d'Études", annee1: "", annee2: 10 },
+    { nom: "Stage d'Application Ingénieur", annee1: 5, annee2: "" },
+    { nom: "Projet de fin d'études / Contrat Pro", annee1: "", annee2: 30 },
   ];
 
   const renderTable = (form: string, title: string, data: any[]) => (
     <div class="mb-12">
       <h1 class="mb-4 text-center text-white text-5xl font-bold">{form}</h1>
       <h2 class="mb-4 text-2xl text-white font-semibold">{title}</h2>
-      <div class="overflow-x-auto rounded shadow">
+      <div class="overflow-x-auto rounded-lg shadow-lg">
         <table class="w-full border border-gray-300 bg-white">
-          <thead class="bg-blue-100">
+          <thead class="bg-blue-600 text-white">
             <tr>
-              <th class="border px-4 py-2">Matière</th>
-              <th class="border px-4 py-2">Année 1 (ECTS)</th>
-              <th class="border px-4 py-2">Année 2 (ECTS)</th>
+              <th class="border px-6 py-3 text-sm">Matière</th>
+              <th class="border px-6 py-3 text-sm">Année 1 (ECTS)</th>
+              <th class="border px-6 py-3 text-sm">Année 2 (ECTS)</th>
             </tr>
           </thead>
           <tbody>
             {data.map((m, i) => (
-              <tr key={i} class="odd:bg-gray-50">
-                <td class="border px-4 py-2">{m.nom}</td>
-                <td class="border px-4 py-2">{m.annee1 || "-"}</td>
-                <td class="border px-4 py-2">{m.annee2 || "-"}</td>
+              <tr key={i} class="odd:bg-gray-100">
+                <td class="border px-6 py-3">{m.nom}</td>
+                <td class="border px-6 py-3">{m.annee1 || "-"}</td>
+                <td class="border px-6 py-3">{m.annee2 || "-"}</td>
               </tr>
             ))}
           </tbody>
@@ -89,46 +94,36 @@ export default component$(() => {
   return (
     <div class="p-8">
       <div class="m-6 mt-32 mx-auto max-w-4xl">
-        <div class="mb-12 bg-white text-center">
-          <h2 class="text-4xl font-bold md:text-5xl">
-            Découvrez toute <span class="text-red-600">nos matières</span>
-            <span class="text-black">  !</span>
+        <div class="mb-12 text-center">
+          <h2 class="text-4xl font-bold text-gray-900 md:text-5xl">
+            Découvrez toutes <span class="text-red-600">nos matières</span> !
           </h2>
-          <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-800 md:text-xl">
-            Découvrez la richesse des matières enseignées et la variété des
-            emplois du temps proposés à l'ISEN adapté à votre avenir
-            professionnel.
+          <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-700 md:text-xl">
+            Découvrez la richesse des matières enseignées et la variété des emplois du temps proposés à l'ISEN adaptés à votre avenir professionnel.
           </p>
         </div>
-        <h1 class="mt-32 mb-10 rounded-4xl bg-gradient-to-b from-red-800 to-red-600 p-2 text-center text-3xl font-bold text-white">
+        
+        <h1 class="mt-32 mb-10 rounded-xl bg-gradient-to-b from-red-800 to-red-600 p-6 text-center text-3xl font-bold text-white">
           Nos Matières et Programmes
         </h1>
-        <div class="my-7 p-5 shadow-xs transition-all duration-500 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl">
-        {renderTable("CIN 1/2", "Tronc commun - Années 1 & 2", tableau1)}
+        <div class="my-7 p-5 transition-all duration-500 transform hover:scale-105 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl shadow-xl">
+          {renderTable("CIN 1 & 2", "Tronc commun - Années 1 & 2", tableau1)}
         </div>
-        <div class="my-7 p-5 shadow-xs transition-all duration-500 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl">
-        {renderTable("BIOST 1/2", "Tronc commun - Années 1 & 2", tableau2)}
+
+        <div class="my-7 p-5 transition-all duration-500 transform hover:scale-105 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl shadow-xl">
+          {renderTable("BIOST 1 & 2", "Tronc commun - Années 1 & 2", tableau2)}
         </div>
-        <div class="my-7 p-5 shadow-xs transition-all duration-500 border-2 border-transparent hover:border-4 hover:border-black  bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl">
-        {renderTable(
-          "Prepa CPGE MPSI/PSI",
-          "Tronc commun - Années 1 & 2",
-          tableau3,
-        )}
+
+        <div class="my-7 p-5 transition-all duration-500 transform hover:scale-105 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-blue-600 to-blue-400 rounded-4xl shadow-xl">
+          {renderTable("Prepa CPGE MPSI/PSI", "Tronc commun - Années 1 & 2", tableau3)}
         </div>
-        <div class="my-7 p-5 shadow-xs transition-all duration-500 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-red-600 to-red-500 rounded-4xl">
-        {renderTable(
-          "Cycle ingénieur 1 e (BAC +3)",
-          "Parcours ingénieur - Année 3",
-          tableau4,
-        )}
+
+        <div class="my-7 p-5 transition-all duration-500 transform hover:scale-105 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-red-600 to-red-500 rounded-4xl shadow-xl">
+          {renderTable("Cycle ingénieur 1ère année (BAC +3)", "Parcours ingénieur - Année 3", tableau4)}
         </div>
-        <div class="my-7 p-5 shadow-xs transition-all duration-500 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-red-600 to-red-500 rounded-4xl">
-        {renderTable(
-          "Cycle ingénieur 2 & 3 (BAC +4 & +5)",
-          "Parcours de spécialisations - Année 4 & 5",
-          tableau5,
-        )}
+
+        <div class="my-7 p-5 transition-all duration-500 transform hover:scale-105 border-2 border-transparent hover:border-4 hover:border-black bg-gradient-to-b from-red-600 to-red-500 rounded-4xl shadow-xl">
+          {renderTable("Cycle ingénieur 2 & 3 (BAC +4 & +5)", "Parcours de spécialisations - Année 4 & 5", tableau5)}
         </div>
       </div>
 
