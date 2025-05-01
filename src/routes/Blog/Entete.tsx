@@ -17,9 +17,14 @@ export default () => <div class="grid md:grid-cols-2 px-2 md:px-16 py-32">
         <Article
             class="shadow-xl shadow-isen-500 hover:shadow-isen-500/50
                 transition-shadow duration-500 p-8"
-            titre="Une vie associative dynamique"
-            description="Clubs, événements, compétitions : la vie étudiante à l’ISEN Méditerranée est rythmée et enrichissante."
-            image="gala"/>
+            titre="Toulon, entre mer, culture et nature : une ville aux mille visages"
+            description="Explorez Toulon au gré de vos envies : 
+            plages ensoleillées, trésors historiques, musées passionnants, 
+            spectacles variés et escapades en pleine nature. 
+            Entre Méditerranée et montagnes, cette ville du sud de 
+            la France vous promet un séjour riche et sur mesure."
+            image="toulon"
+            href="/blog/toulon"/>
         <div class="w-full h-full absolute top-0 left-0 -z-10 -rotate-3
             bg-gradient-to-br from-isen-500 to-isen-900"/>
         <Avion2 class="absolute -top-10 right-2 z-20 h-1/2 md:h-4/5 w-auto"/>

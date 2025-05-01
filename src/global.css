@@ -10,3 +10,4 @@
 #associations-slider::-webkit-scrollbar {
     scrollbar-width: none;
 }
+html { scroll-behavior: smooth; }
