@@ -39,7 +39,7 @@ export default component$(() => {
                             <Muco class="w-full h-98 rounded-2xl"/>
                         </div>
                         <div class="rounded-2xl p-3">
-                            <div class="mb-3">​Le Mucofoot est un événement <strong>sportif caritatif</strong> organisé chaque année par <strong>l'ISEN Partage</strong>.</div>
+                            <div class="mb-3">Le Mucofoot est un événement <strong>sportif caritatif</strong> organisé chaque année par <strong>l'ISEN Partage</strong>.</div>
                             <div class="mb-3">Il s'agit d'un <strong>tournoi de football</strong> dont l'intégralité des bénéfices est reversée à <strong>l'Association Grégory Lemarchal</strong>, œuvrant pour la lutte contre la <strong>mucoviscidose</strong>.</div>
                             <div class="mb-3">L'objectif principal du Mucofoot est de <strong>sensibiliser la communauté étudiante</strong> à la mucoviscidose et de <strong>collecter des fonds</strong> pour soutenir la <strong>recherche et l'accompagnement</strong> des patients.</div>
                             <div>Grâce à l'engagement des participants et au soutien des sponsors, le Mucofoot a permis de récolter plus de <strong>4 000 €</strong>.</div>

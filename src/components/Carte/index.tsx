@@ -7,7 +7,7 @@ export default component$(() => {
     // eslint-disable-next-line qwik/no-use-visible-task
     useVisibleTask$(() => {
         const div = document.getElementById('carte')!;
-        const _carte = mount(div);
+        mount(div);
     })
     
     return <div id="carte" class="w-full h-full"/>

@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import RepairSalle from "~/assets/associations/photos_asso/repair_salle.jpg?jsx";
-import Repair from "~/assets/associations/photos_asso/ordi_repair.jpg?jsx";
+// import Repair from "~/assets/associations/photos_asso/ordi_repair.jpg?jsx";
 import RG from "~/assets/associations/robin_gauche.png?jsx";
 
 
