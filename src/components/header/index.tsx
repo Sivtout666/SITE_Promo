@@ -34,9 +34,6 @@ export default component$(() => {
                             </div>
                             <div class="flex flex-col gap-2">{/* Partie droite du dropdown*/}
                                 <Link href="/ecole/international" class="hover:underline">International</Link>
-                                <div class="flex flex-col pl-6 text-sm">
-                                    <Link>- Destinations</Link>
-                                </div>
                                 <Link href="/ecole/recherches" class="hover:underline">Recherches / Master spécialisé</Link>
                             </div>
                         </div>
@@ -49,9 +46,6 @@ export default component$(() => {
                         <div class="flex flex-row w-xl gap-20 p-3 pl-10">  {/* Dropdown*/}
                             <div class="flex flex-col gap-2"> {/* Partie gauche du dropdown*/}
                                 <Link href="/vie_etudiante/Evenements" class="hover:underline">Évènements</Link>
-                                <div class="flex flex-col pl-6 text-sm w-60">
-                                    <Link>En cliquant ici vous pouvait voir des événements comme les week end d'integration et plus encore</Link>
-                                </div>
                                 <Link href="/vie_etudiante/Associations" class="hover:underline">Associations</Link>
                             </div>  
                             <div class="flex flex-col gap-2">{/* Partie droite du dropdown*/}
