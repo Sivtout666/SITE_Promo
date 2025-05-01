@@ -8,6 +8,10 @@ import Toulon from "~/assets/toulon.jpg?jsx"
 type Props = {
     titre: string,
     description: string,
+    image: 'amphi' | 'gala'| 'sud'
+} & PropsOf<'article'>
+export default component$(({ titre, description, image, ...props }: Props) => {
+    return <Link>
     href?: string,
     image: 'amphi' | 'gala'| 'sud' | 'toulon'
 } & PropsOf<'article'>
