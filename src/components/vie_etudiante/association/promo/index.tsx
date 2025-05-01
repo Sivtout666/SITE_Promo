@@ -38,6 +38,12 @@ export default component$(() => {
                     </div>
                 </div> 
             </div>
+
+            <div class="p-8 md:p-16 lg:p-32 flex items-center justify-center">
+            <iframe class="w-full h-full min-h-[75vh] rounded-md"
+                src="https://www.youtube.com/embed/Wbe7dpK6JQo?si=NN4_-3GWZpGaPn1S" title="YouTube video player" 
+                />
+            </div>
         </div>
 
     </>
