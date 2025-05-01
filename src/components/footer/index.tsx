@@ -11,10 +11,10 @@ const categories = [
         liens: {
             'Partie 1': '#1',
             'Partie 2': '#2',
-            'Partie 3': '#3'
+            'Partie 3': '#3',
             "Qui sommes-nous ?": '/#qui',
             "Qu'est-ce qu'on y fait ?": '/#contenu',
-            'Pour qui ?': '/#pour-qui'
+            'Pour qui ?': '/#pour-qui',
         }
     },
     {
