@@ -24,7 +24,7 @@ export default component$(() => {
     const association = useSignal<Association>('bda')
     return <>
         <div>
-            <div id="associations-slider" class="flex flex-row w-screen overflow-x-auto snap-x snap-mandatory box-border" onScroll$={(event, t) => {
+            <div id="associations-slider" class="flex flex-row w-screen overflow-x-auto snap-x snap-mandatory box-border" onScroll$={event => {
             lastScroll.value = event.timeStamp;
 
             // le setTimeout execute la fonction 

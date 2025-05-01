@@ -1,5 +1,5 @@
-import Carte from "~/components/Carte"
-import Partenaire from "~/components/Carte/partenaire"
+import Carte from "~/components/carte"
+import Partenaire from "~/components/carte/partenaire"
 
 export default () => <>
     <div class="px-16">

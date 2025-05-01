@@ -46,6 +46,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
-    "motion": "^12.6.3"
+    "motion": "^12.6.3",
+    "wrangler": "^4.14.1"
   }
 }
