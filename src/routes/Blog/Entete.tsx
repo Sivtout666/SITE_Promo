@@ -1,6 +1,6 @@
 import Avion from "~/assets/avions/avions2.png?jsx"
 import Avion2 from "~/assets/avions/avions3.png?jsx"
-import Article from "~/components/Blog/article";
+import Article from "~/components/blog/article";
 
 export default () => <div class="grid md:grid-cols-2 px-2 md:px-16 py-32">
     <div class="px-4 pb-32 md:p-4 relative">

@@ -1,11 +1,13 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { animate, scroll } from "motion"
-import Landing from "~/components/Accueil/Landing";
-import Quoi from "~/components/Accueil/Quoi";
-import Qui from "~/components/Accueil/Qui";
-import Ou from "~/components/Accueil/Ou";
-import Contenu from "~/components/Accueil/Contenu";
+
+import Landing from "~/components/accueil/Landing";
+import Quoi from "~/components/accueil/Quoi";
+import Qui from "~/components/accueil/Qui";
+import Ou from "~/components/accueil/Ou";
+import Contenu from "~/components/accueil/Contenu";
+import Chat from "~/assets/isen/chat-parant.png?jsx"
 
 export default component$(() => {
     // eslint-disable-next-line qwik/no-use-visible-task
@@ -27,9 +29,13 @@ export default component$(() => {
         <Contenu/>
         <Qui/>
         <Ou/>
-        <dialog class="backdrop-blur-sm">
+        <div class="p-8 md:p-16 lg:p-32 relative">
+            <iframe class="md:w-2/3 min-h-[60vh] rounded-md ml-auto"
+                src="https://www.youtube.com/embed/muAkY-7uyds?si=JZHmXTHLJ7q7Hmnp" 
+                />
+            <Chat class="absolute top-8 left-36 h-32 w-auto"/>
 
-        </dialog>
+        </div>
     </>
 });
 export const head: DocumentHead = {

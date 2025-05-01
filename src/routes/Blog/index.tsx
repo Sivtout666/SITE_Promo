@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import Article from "~/components/Blog/article";
+import Article from "~/components/blog/article";
 import Entete from "./Entete";
 
 export default component$(() => {
