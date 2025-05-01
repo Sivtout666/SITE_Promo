@@ -6,11 +6,11 @@ import Cyber from "~/assets/formation/cyber.png";
 import Gaming from "~/assets/formation/gaming.jpg";
 import { slideIn, slideOut } from "./animations";
 
-
 interface Formation {
   img: string;
   title: string;
   description: string;
+  details: string;
   location: string;
   tag: string;
 }
@@ -22,14 +22,14 @@ export const Formations = component$(() => {
   });
 
   const handleCardClick = $((formation: Formation) => {
-    console.log("Card clicked:", formation); 
+    console.log("Card clicked:", formation);
     const infoPage = document.getElementById("info-page");
     if (infoPage) {
       slideIn(infoPage);
       state.selectedFormation = formation;
       state.infoPageVisible = true;
     } else {
-      console.error("info-page element not found"); 
+      console.error("info-page element not found");
     }
   });
 
@@ -50,6 +50,8 @@ export const Formations = component$(() => {
       title: "Prépa Ingénieur informatique et numérique",
       description:
         "Formation préparatoire offrant une solide base scientifique et en informatique pour poursuivre des études d'ingénieur.",
+      details:
+      "La prépa ingénieur informatique et numérique propose une formation polyvalente pour les élèves scientifiques ou économiques, avec un programme en maths, informatique, physique et électronique, et deux options : Développement (technologies et logiciels) ou Économie (analyse de données et dynamiques de marché) ; après deux ans, les étudiants accèdent au cycle ingénieur ; la formation inclut un encadrement individualisé, un contrôle régulier des connaissances, la valorisation du savoir-être via des activités extra-académiques, une organisation en semestres de 30 ECTS selon le système LMD, et des cours de soutien à la demande.",
       location: "Toulon",
       tag: "CIN",
     },
@@ -58,6 +60,7 @@ export const Formations = component$(() => {
       title: "Prépa ingénieur biologie, sciences et technologies",
       description:
         "Formation pluridisciplinaire à l’interface du vivant, des sciences et des technologies, préparant aux enjeux de la santé, de la biotechnologie et de l’innovation numérique.",
+      details: "hhhh",
       location: "Toulon",
       tag: "BIOST",
     },
@@ -66,6 +69,7 @@ export const Formations = component$(() => {
       title: "Cycle ingénieur Bac+5",
       description:
         "Formation d'ingénieurs experts et polyvalents, prêts à relever les défis technologiques actuels et futurs grâce à un large choix de spécialisations.",
+      details: "hhhh",
       location: "Toulon",
       tag: "Cycle ingé",
     },
@@ -73,7 +77,8 @@ export const Formations = component$(() => {
       img: Gaming,
       title: "Bachelor Développement de Systèmes Numériques Immersifs",
       description:
-        "Formation axée sur la création de systèmes interactifs et immersifs, mêlant développement logiciel, technologies XR et innovation numérique pour répondre aux nouveaux usages du virtuel.",
+        "Formation axée sur la création de systèmes interactifs et immersifs, mêlant développement logiciel, technologies XR et innovation numérique pour répondre aux nouveaux usages du virtuel.                                                             ",
+      details: "hhhh",
       location: "Marseille",
       tag: "Bach DSNI",
     },
@@ -82,6 +87,7 @@ export const Formations = component$(() => {
       title: "Bachelor Cybersécurité",
       description:
         "Formation spécialisée en cybersécurité offrant une expertise solide en protection des systèmes informatiques, analyse de vulnérabilités et gestion des risques numériques.",
+      details: "hhhh",
       location: "Toulon",
       tag: "Bach Cyber",
     },
@@ -103,12 +109,13 @@ export const Formations = component$(() => {
               alt={formation.title}
               class="h-64 w-full object-cover"
             />
+
             <div class="absolute inset-0 mt-32 flex flex-row space-x-32 bg-gradient-to-t from-red-800 via-red-700 to-transparent p-6 text-white">
               <div class="my-5 flex flex-col items-start space-y-2">
-                <div class="rounded-lg bg-white px-3 py-1 text-sm font-bold text-black shadow">
+                <div class="rounded-lg bg-white px-7 py-1 text-sm font-bold text-black shadow">
                   {formation.tag}
                 </div>
-                <div class="rounded-xl bg-blue-700 px-3 py-1 text-sm font-semibold text-white shadow">
+                <div class="rounded-xl bg-blue-700 px-1 py-1 text-sm font-semibold text-white shadow">
                   📍 {formation.location}
                 </div>
               </div>
@@ -127,10 +134,11 @@ export const Formations = component$(() => {
       >
         {state.selectedFormation && (
           <div class="p-6">
+            
             <h2 class="mb-4 text-2xl font-bold">
               {state.selectedFormation.title}
             </h2>
-            <p class="text-gray-700">{state.selectedFormation.description}</p>
+            <p class="text-gray-700">{state.selectedFormation.details}</p>
             <button
               id="close-btn"
               class="mt-4 rounded bg-blue-500 px-4 py-2 text-white"

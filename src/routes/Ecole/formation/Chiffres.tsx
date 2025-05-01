@@ -34,7 +34,7 @@ export default component$(() => {
         </div>
         
         <div class="bg-blue-300 rounded-xl p-6 text-white col-span-1 flex flex-col justify-center items-start h-40">
-          <div class="text-3xl font-bold">10000</div>
+          <div class="text-3xl font-bold">10 000</div>
           <div class="text-sm mt-2 leading-snug">Ingénieurs ISEN</div>
         </div>
       </div>
