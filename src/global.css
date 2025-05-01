@@ -7,4 +7,7 @@
     --color-blisen-900: #003879;
 }
 
+#associations-slider::-webkit-scrollbar {
+    scrollbar-width: none;
+}
 html { scroll-behavior: smooth; }

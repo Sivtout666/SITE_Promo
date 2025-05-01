@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { LuInstagram, LuLinkedin, LuYoutube } from "@qwikest/icons/lucide";
 import Logo from "~/assets/isen/logo-blanc.png?jsx"
+import TikTok from "~/assets/icons/tik-tok.svg?jsx"
 import { LienFondu } from "./lien";
 
 const categories = [
@@ -11,7 +12,7 @@ const categories = [
         liens: {
             "Qui sommes-nous ?": '/#qui',
             "Qu'est-ce qu'on y fait ?": '/#contenu',
-            'Pour qui ?': '/#pour-qui'
+            'Pour qui ?': '/#pour-qui',
         }
     },
     {
@@ -62,6 +63,12 @@ export default component$(() => {
                 <Link target="_blank" class="group"
                     href="https://www.youtube.com/channel/UCpVrAR52BwO_utn1PGdxhDg">
                     <LuYoutube class="w-6 h-6 group-hover:stroke-white/75 transition-colors"/>
+                </Link>
+                <Link target="_blank" class="group"
+                    href="https://www.tiktok.com/@92isen?_t=ZN-8vzmrDoFDhn&_r=1">
+                    <TikTok class="w-6 h-6 p-0.5
+                        fill-white 
+                        group-hover:fill-white/75 transition-colors"/>
                 </Link>
             </div>
         </div>

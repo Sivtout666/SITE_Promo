@@ -48,7 +48,7 @@ export default component$(() => {
                         parametes.fond ? parametes.fond : 'bg-white']}>
                         <div class="flex flex-row w-xl gap-20 p-3 pl-10">  {/* Dropdown*/}
                             <div class="flex flex-col gap-2"> {/* Partie gauche du dropdown*/}
-                                <Link href="/vie_etudiante/Evenements" class="hover:underline">Événements</Link>
+                                <Link href="/vie_etudiante/Evenements" class="hover:underline">Évènements</Link>
                                 <div class="flex flex-col pl-6 text-sm w-60">
                                     <Link>En cliquant ici vous pouvait voir des événements comme les week end d'integration et plus encore</Link>
                                 </div>
