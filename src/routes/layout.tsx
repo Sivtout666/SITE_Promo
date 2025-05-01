@@ -1,5 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
-import type { RequestHandler } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 
@@ -21,3 +21,13 @@ export default component$(() => {
     <Footer/>
   </>
 });
+
+export const head: DocumentHead = {
+    title: 'ISEN Méditerranée',
+    meta: [
+        {
+            name: "description",
+            content: "Une école d'ingénieurs du numérique",
+        },
+    ],
+}
