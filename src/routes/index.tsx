@@ -1,8 +1,13 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { animate, scroll } from "motion"
-import Landing from "~/components/Accueil/landing";
-import Clouds from "~/components/Accueil/clouds";
+
+import Landing from "~/components/accueil/Landing";
+import Quoi from "~/components/accueil/Quoi";
+import Qui from "~/components/accueil/Qui";
+import Ou from "~/components/accueil/Ou";
+import Contenu from "~/components/accueil/Contenu";
+import Chat from "~/assets/isen/chat-parant.png?jsx"
 
 export default component$(() => {
     // eslint-disable-next-line qwik/no-use-visible-task
@@ -19,14 +24,20 @@ export default component$(() => {
     })
 
     return <>
-        <Landing>
-            <Clouds/>
-        </Landing>
-        <section class="h-screen bg-fuchsia-800"/>
-        <section class="h-screen bg-lime-400"/>
+        <Landing/>
+        <Quoi/>
+        <Contenu/>
+        <Qui/>
+        <Ou/>
+        <div class="p-8 md:p-16 lg:p-32 relative">
+            <iframe class="md:w-2/3 min-h-[60vh] rounded-md ml-auto"
+                src="https://www.youtube.com/embed/muAkY-7uyds?si=JZHmXTHLJ7q7Hmnp" 
+                />
+            <Chat class="absolute top-8 left-36 h-32 w-auto"/>
+
+        </div>
     </>
 });
-
 export const head: DocumentHead = {
     title: "Welcome to Qwik",
     meta: [
@@ -35,4 +46,9 @@ export const head: DocumentHead = {
             content: "Qwik site description",
         },
     ],
+    frontmatter: {
+        absolute: true,
+        color: 'text-white',
+        fond: 'bg-white/25 rounded backdrop-blur-sm'
+    }
 };
