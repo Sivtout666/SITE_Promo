@@ -6,10 +6,13 @@ export default component$(() => {
             Devenir ingénieur… et bien plus encore
         </h1>
         <p class="my-4 text-xl">
-            Située entre mer et montagne, Toulon est 
-            une ville dynamique du sud de la France, riche en histoire, 
-            en culture et en paysages. Vous y trouverez toujours ce que 
-            vous cherchez.
+            Dans un monde en constante évolution, où les défis technologiques, 
+            environnementaux et sociétaux s'entremêlent, l'ingénieur de demain 
+            ne peut plus se contenter de maîtriser les sciences. Il doit comprendre 
+            les enjeux de son époque, faire preuve d'ingéniosité, de responsabilité 
+            et d’ouverture sur le monde. C’est cette vision que porte ISEN, 
+            une école reconnue pour sa pédagogie innovante et ses valeurs 
+            humaines fortes.
         </p>
         <h3 class="text-2xl font-medium my-8">
             Une pédagogie centrée sur l’humain et l’innovation

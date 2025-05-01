@@ -8,13 +8,17 @@ import Toulon from "~/assets/toulon.jpg?jsx"
 type Props = {
     titre: string,
     description: string,
-    image: 'amphi' | 'gala'| 'sud'
+    image: 'amphi' | 'gala'| 'sud' | 'toulon',
+    href?: string
 } & PropsOf<'article'>
-export default component$(({ titre, description, image, ...props }: Props) => {
-    return <Link>
-    href?: string,
-    image: 'amphi' | 'gala'| 'sud' | 'toulon'
-} & PropsOf<'article'>
+
+export const Placeholder = component$(() => {
+    return <div class="w-full h-full rounded cursor-pointer p-4
+        flex flex-col gap-2 bg-black/10 animate-pulse">
+
+    </div>
+})
+
 export default component$(({ titre, description, image, href, ...props }: Props) => {
     return <Link href={href}>
         <article {...props} class={["w-full h-full rounded cursor-pointer p-4",

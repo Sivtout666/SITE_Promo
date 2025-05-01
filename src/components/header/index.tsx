@@ -30,7 +30,7 @@ export default component$(() => {
                             <div class="flex flex-col gap-2"> {/* Partie gauche du dropdown*/}
                                 <Link href="/ecole/formation" class="hover:underline">Formation</Link>
                                 <Link href="/ecole/matieres" class="hover:underline">Matières / Emploi du temps</Link>
-                                <Link href="/ecole/partenaires" class="hover:underline">Partenaires / Entreprises</Link>
+                                {/* <Link href="/ecole/partenaires" class="hover:underline">Partenaires / Entreprises</Link> */}
                             </div>
                             <div class="flex flex-col gap-2">{/* Partie droite du dropdown*/}
                                 <Link href="/ecole/international" class="hover:underline">International</Link>
@@ -49,14 +49,8 @@ export default component$(() => {
                                 <Link href="/vie_etudiante/Associations" class="hover:underline">Associations</Link>
                             </div>  
                             <div class="flex flex-col gap-2">{/* Partie droite du dropdown*/}
-                                <Link href="/vie_etudiante/Projets" class="hover:underline">Projets</Link>
-                                <div class="flex flex-col pl-6 text-sm">
-                                    <Link>- Tide</Link>
-                                    <Link>- Drone</Link>
-                                    <Link>- Garage Week</Link>
-                                    <Link>- Innovation Week</Link>
-                                </div>
-                                <Link href="/vie_etudiante/Ville" class="hover:underline">Ville / Logements</Link>
+                                <Link href="#" class="hover:underline">Projets</Link>
+                                <Link href="#" class="hover:underline">Ville / Logements</Link>
                             </div>
                         </div>
                     </div>
